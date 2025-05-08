@@ -2,7 +2,8 @@ function fetchData() {
     return new Promise((resolve) => {
       setTimeout(() => {
         resolve({ data: "This is the fetched data" });
-      }, 2000); 
+      }, 2000);  // 2 milisec
+    
     });
   }
   

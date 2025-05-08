@@ -1,0 +1,169 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Add Numbers</title>
+</head>
+
+<body>
+    <script src="website.js" type="text/javascript"></script>
+  <form id="addForm">
+    <input type="text" id="num1" placeholder="Enter first number">
+    <input type="text" id="num2" placeholder="Enter second number">
+    <button type="submit">Add</button>
+  </form>
+  <div id="result"></div>
+   -->
+
+
+
+
+<!-- 
+
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   </head>
+   <body>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis itaque, sapiente quos explicabo amet quisquam eligendi dolore enim deleniti pariatur eveniet inventore consequuntur. Recusandae unde consequatur at ad consequuntur nulla.
+    <h2 class="demo_class" id=" demo">click me </h2>
+    <button onmouseover="myfuntion()">click me</button>
+    <br>
+    <form action="">
+        Enter : <input type="text" id="myinput" onfocus="focuse (this)"/>
+
+
+        pasword : <input type="text" id="myinput" onblur="blur (this)"/>
+           <input type="submit">
+    </form>
+
+
+    
+   </body>
+   </html>
+
+
+   <script>
+    function focuse(x){
+    x.style.background="yellow";
+    x.style.color="red";
+    x.style.fontSize="20px";
+    x.style.fontFamily="Arial";
+    x.style.textAlign="center";
+    }
+    function blure(x){
+    x.style.background="red";
+    x.style.color="yellow";
+    x.style.fontSize="16px";
+    x.style.fontFamily="Arial";
+    x.style.textAlign="left";
+    }
+</script>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis itaque, sapiente quos explicabo amet quisquam eligendi dolore enim deleniti pariatur eveniet inventore consequuntur. Recusandae unde consequatur at ad consequuntur nulla.
+
+  <h2 class="demo_class" id="demo">click me</h2>
+
+  <button onmouseover="myFunction()">click me</button>
+  <br>
+
+  <form action="">
+    Enter : <input type="text" onfocus="focusEffect(this)"/><br><br>
+    Password : <input type="text" onblur="blurEffect(this)"/>
+    <input type="submit">
+  </form>
+
+  <button onclick="btn(); changeColor(); showMessage(); changeText(); moveButton(this);">eject me</button>
+  <p id="message"></p>
+
+  <script>
+    function focusEffect(x){
+      x.style.background="yellow";
+      x.style.color="red";
+      x.style.fontSize="20px";
+      x.style.fontFamily="Arial";
+      x.style.textAlign="center";
+    }
+
+    function blurEffect(x){
+      x.style.background="red";
+      x.style.color="yellow";
+      x.style.fontSize="16px";
+      x.style.fontFamily="Arial";
+      x.style.textAlign="left";
+    }
+
+    function myFunction() {
+      document.getElementById("demo").innerText = "You hovered the button!";
+    }
+
+    function btn() {
+      alert("You've been ejected!");
+    }
+
+    function changeColor() {
+      const colors = ["skyblue", "lightgreen", "lightpink", "orange", "lightgray"];
+      document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+    }
+
+    function showMessage() {
+      const messages = [
+        "See you later!",
+        "Boom! You’re gone!",
+        "Flying into space...",
+        "Ejection complete!",
+        "Come back soon!"
+      ];
+      document.getElementById("message").innerText =
+        messages[Math.floor(Math.random() * messages.length)];
+    }
+
+    function changeText() {
+      document.querySelectorAll("button")[1].innerText = "Try Again!";
+    }
+
+    function moveButton(btn) {
+      const x = Math.random() * (window.innerWidth - 150);
+      const y = Math.random() * (window.innerHeight - 100);
+      btn.style.position = "absolute";
+      btn.style.left = x + "px";
+      btn.style.top = y + "px";
+    }
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+  

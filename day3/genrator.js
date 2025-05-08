@@ -1,31 +1,27 @@
-// function statement( name1 , name2 ) {
+function statement( name1 , name2 ) {
 
-//     console.log(name1)
-//     return
-//     console.log(name2)   
-// }
-// statement("my name is ashutosh ", " b tech cse ")
-
-
-
-
-
-// //  generator functions 
-// function* gen(){
-//     console.log("hello")
-//     yield 12;
-//     console.log("world")
-//     yield 2;
-//     console.log("goodbye")}
-// const g = gen()
-// console.log(g.next())
-// console.log(g.next())
-// console.log(g.next())
+    console.log(name1)
+    return
+    console.log(name2)   
+}
+statement("my name is ashutosh ", " b tech cse ")
 
 
 
 
 
+//  generator functions 
+function* gen(){               // we can change the star position funtion* gen ->  funtion *gen 
+    console.log("hello")
+    yield 1;
+    console.log("world")
+    yield 2;
+    console.log("goodbye")}
+const g = gen()
+console.log(g.next())
+console.log(g.next())
+console.log(g.next())
+ 
 
 // // printing the pattern 
 let n = 5;
